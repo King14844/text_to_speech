@@ -10,7 +10,7 @@ speechConfig.speechSynthesisVoiceName = "en-US-JennyNeural";
 const synthesizer = new sdk.SpeechSynthesizer(speechConfig, null);
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 
 app.use(bodyParser.json());
 
