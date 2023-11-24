@@ -18,7 +18,7 @@ app.post('/synthesize', (req, res) => {
     const visemeData = [];
     synthesizer.visemeReceived = function (s, e) {
         visemeData.push({
-            audioOffset: Math.ceil(e.audioOffset / 10000),
+            audioOffset: Math.round(e.audioOffset / 10000),
             visemeId: e.visemeId,
         });
     };
