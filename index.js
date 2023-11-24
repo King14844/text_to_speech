@@ -1,7 +1,6 @@
 const sdk = require("microsoft-cognitiveservices-speech-sdk");
 const express = require('express');
 const bodyParser = require('body-parser');
-
 const subscriptionKey = "3c4121fca5c9472db7c84fc3e4442c0f";
 const region = "eastus";
 
